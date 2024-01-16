@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --cor-primaria: #ffff;
+    --cor-secundaria: #c0c0c0;
+    --cor-terciaria: #247ae4;
+    --cor-de-fundo: #00030c;
+    --cor-ao-passar-mouse-no-botao: #12ca50  ;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+.principal{
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    padding: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover{
+    background-color:var(--cor-ao-passar-mouse-no-botao);
+    color: black;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-primaria);
+}
+
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-secundaria);
+    
+}
+
+
+/*Aqui começa a segunda "section" da pagina*/
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.descricao__titulo{    
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin-bottom: 0,1em;
+}
+
+.descricao__texto{
+    color: var(--cor-secundaria);
+}
+
+/*Aqui começa a terceira "section" da pagina, vale lembrar que tem muitso recursos reutilizados*/
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+/*Aqui começa a quinta "section" da pagina, vale lembrar que tem muitso recursos reutilizados*/
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--cor-primaria);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--cor-primaria);
+}
+
+
+/*Aqui começa o rodapé*/
+
+.rodape{   
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;  
+}
+
+.rodape__lista__link a{
+    color: var(--cor-primaria); 
+    text-decoration: none;   
+    padding: 1em;
+
+}
+
+.rodape__lista__link a:hover{
+    color: var(--cor-terciaria);
+}
+
+.rodape__lista__link a:active{
+    color:#af0715;
+}
+
+.rodape__texto{
+    color: var(--cor-secundaria);
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+
+
+
